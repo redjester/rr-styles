@@ -1,6 +1,6 @@
 <?php
-	$client = "Laughlin Constable";
-	$siteTitle = "LC Boilerplate";
+	$client = "Registered Reviews";
+	$siteTitle = "Find free local Quotes for your home needs";
 
 	// google analytics & tag manager
 	$gaId = "UA-XXXXXX-X";
@@ -41,7 +41,7 @@
 		<meta name="twitter:domain" content="" />
 
 		<!-- CDN Stylesheets -->
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 
 		<!-- Global Stylesheet -->
@@ -87,9 +87,9 @@
 
 		<header class="site-header">
 			<div class="app-bar row">
-				<div class="col">
+				<div class="col md-4 sm-12">
 					<h6 class="site-title">
-						<a href="/home.php"><span>LC Boilerplate</span></a>
+						<a href="/"><span>Registered Reviews</span></a>
 					</h6>
 					<button type="button" class="btn btn-link nav-toggle show-for-sm">
 						<span class="fa fa-bars fa-2x"></span>
@@ -100,29 +100,25 @@
 						<span class="assistive-text">Search</span>
 					</button> 
 				</div>
+				<div class="col md-5 sm-12">
+					<nav class="site-nav">
+						<h6 class="assistive-text">Main navigation</h6>
+						<a href="#content" class="skip-link assistive-text">Skip to content</a>
+						<a class="nav-toggle show-for-sm" href="#"><span class="assistive-text">Hide Nav</span></a>
+						<?php include('menu.php'); ?>
+					</nav>
+				</div>
+				<div class="col md-3 sm-12 align-right">
+					<nav class="business-login hide-for-sm">
+						<h6 class="assistive-text">Utility navigation</h6>
+						<a class="btn btn-primary business-login" id="buisness-login-header-btn" href="#" title="Log into your Business Account">Business Login<span class="fa fa-arrow-circle-right"></span></a>				
+					</nav>
+				</div>
 			</div>
 
-			<nav class="site-nav">
-				<h6 class="assistive-text">Main navigation</h6>
-				<a href="#content" class="skip-link assistive-text">Skip to content</a>
-				<a class="nav-toggle show-for-sm" href="#"><span class="assistive-text">Hide Nav</span></a>
-				<?php include('menu.php'); ?>
-			</nav>
 			<div class="nav-overlay"></div>
 
-			<nav class="utility-bar hide-for-sm">
-				<h6 class="assistive-text">Utility navigation</h6>
-				<div class="row">
-					<div class="col">
-						<ul class="list-inline piped">
-							<li><a href="/log-in.php">Log In</a></li>
-							<li><a href="/contact-form.php">Contact Us</a></li>
-						</ul>							
-					</div>
-				</div>
-			</nav>
-
-			<div class="search-bar">
+			<div class="search-bar show-for-sm">
 				<div class="row">
 					<div class="col">
 						<form>

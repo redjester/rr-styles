@@ -96,7 +96,7 @@
 			
 			<h3>Styled Buttons</h3>
 			<p><button class="btn btn-primary">Primary</button></p>
-			<p><button class="btn btn-info">Info</button></p>
+			<p><button class="btn btn-secondary">Secondary</button></p>
 			<p><button class="btn btn-success">Success</button></p>
 			<p><button class="btn btn-warning">Warning</button></p>
 			<p><button class="btn btn-danger">Danger</button></p>

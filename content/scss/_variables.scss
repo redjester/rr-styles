@@ -1,7 +1,8 @@
 //== brand colors
 
-$brand-primary: #2c83da !default;
-$brand-info: #5bc0de !default;
+$brand-primary: #00a6df; //light-blue
+$brand-secondary: #1774a1; //dark-blue
+$brand-grey: #929497; //grey
 $brand-success: #090 !default;
 $brand-warning: #f0ad4e !default;
 $brand-danger: #c00 !default;
@@ -22,24 +23,26 @@ $content-max-width: 1200px !default;
 
 //== typography
 
-$font-family-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif: 'Open Sans', Helvetica, Arial, sans-serif;
 $font-family-serif: Georgia, 'Times New Roman', Times, serif !default;
 $font-family-monospace: Menlo, Monaco, Consolas, 'Courier New', monospace !default;
 $font-family-base: $font-family-sans-serif !default;
 
-$font-size-base: 14px !default;
+$font-size-base: 16px;
 $line-height-base: 1.4 !default;
-$font-weight-base: 400 !default;
+$font-weight-base: 300;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 800;
 
-$font-size-large: 16px !default;
-$font-size-small: 12px !default;
+$font-size-large: 20px;
+$font-size-small: 12px;
 
-$font-size-h1: 40px !default;
-$font-size-h2: 30px !default;
-$font-size-h3: 24px !default;
-$font-size-h4: 21px !default;
-$font-size-h5: 18px !default;
-$font-size-h6: 16px !default;
+$font-size-h1: 46px;
+$font-size-h2: 26px;
+$font-size-h3: 22px;
+$font-size-h4: 20px;
+$font-size-h5: 18px;
+$font-size-h6: 16px;
 
 $headings-font-family: inherit !default;
 $headings-line-height: 1.2 !default;
@@ -64,13 +67,13 @@ $btn-primary-focus-bg: darken($btn-primary-bg, 15%) !default;
 $btn-primary-active-bg: darken($btn-primary-bg, 20%) !default;
 $btn-primary-border-color: darken($btn-primary-bg, 15%) !default;
 
-$btn-info-color: #fff !default;
-$btn-info-hover-color: $btn-info-color !default;
-$btn-info-bg: $brand-info !default;
-$btn-info-hover-bg: darken($btn-info-bg, 10%) !default;
-$btn-info-focus-bg: darken($btn-info-bg, 15%) !default;
-$btn-info-active-bg: darken($btn-info-bg, 20%) !default;
-$btn-info-border-color: darken($btn-info-bg, 15%) !default;
+$btn-secondary-color: #fff !default;
+$btn-secondary-hover-color: $btn-secondary-color !default;
+$btn-secondary-bg: $brand-secondary;
+$btn-secondary-hover-bg: darken($btn-secondary-bg, 10%) !default;
+$btn-secondary-focus-bg: darken($btn-secondary-bg, 15%) !default;
+$btn-secondary-active-bg: darken($btn-secondary-bg, 20%) !default;
+$btn-secondary-border-color: darken($btn-secondary-bg, 15%) !default;
 
 $btn-success-color: #fff !default;
 $btn-success-hover-color: $btn-success-color !default;

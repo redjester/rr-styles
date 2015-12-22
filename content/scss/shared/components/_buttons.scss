@@ -61,24 +61,24 @@ button,
 	}
 }
 
-.btn-info {
-	color: $btn-info-color;
-	background: $btn-info-bg;
+.btn-secondary {
+	color: $btn-secondary-color;
+	background: $btn-secondary-bg;
 	@if $btn-border != 'none' {
-		border-color: $btn-info-border-color;
+		border-color: $btn-secondary-border-color;
 	}
 
 	&:hover {
-		background: $btn-info-hover-bg;
-		color: $btn-info-hover-color;
+		background: $btn-secondary-hover-bg;
+		color: $btn-secondary-hover-color;
 	}
 
 	&:focus {
-		background: $btn-info-focus-bg;
+		background: $btn-secondary-focus-bg;
 	}
 
 	&:active {
-		background: $btn-info-active-bg;
+		background: $btn-secondary-active-bg;
 	}
 }
 
