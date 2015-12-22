@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /invalid-page.php
+Disallow: /error.php
+Disallow: /kitchen-sink.php
+
+Sitemap: http://domain.tld/sitemap.xml
+
+# Reference: http://www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449

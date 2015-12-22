@@ -1,0 +1,42 @@
+html,
+body {
+
+	@media only screen and (max-width: 767px) {
+		overflow-x: hidden;
+	}
+}
+
+html {
+	cursor: default;
+
+	&.nav-visible {
+
+		@media only screen and (max-width: 767px) {
+			overflow: hidden;
+		}
+	}
+}
+
+body {
+	font-size: $font-size-base;
+	font-family: $font-family-base;
+	line-height: $line-height-base;
+	font-weight: $font-weight-base;
+	color: $color-base;
+	background: $body-bg;
+
+	.nav-visible & {
+
+		@media only screen and (max-width: 767px) {
+			overflow: hidden;
+		}
+	}
+}
+
+a {
+	color: $link-color;
+
+	&:hover {
+		color: $link-hover-color;
+	}
+}

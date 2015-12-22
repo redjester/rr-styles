@@ -1,0 +1,16 @@
+{
+	"name": "lc-boilerplate",
+	"version": "0.1.0",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/laughlin/lc-kickstart.git"
+	},
+	"main": "Gruntfile.js",
+	"devDependencies": {
+		"grunt": "~0.4.2",
+		"grunt-contrib-jshint": "~0.10.0",
+		"grunt-contrib-sass": "~0.7.3",
+		"grunt-contrib-watch": "~0.5.3"
+	}
+}

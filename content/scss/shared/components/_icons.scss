@@ -1,0 +1,74 @@
+.icon {
+	position: relative;
+	display: inline-block;
+	@extend .no-print;
+}
+
+[class^=caret] {
+	position: relative;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: transparent;
+	margin-left: 7px;
+}
+
+.caret-up {
+	border-width: 0 4px 6px;
+	border-bottom-color: $color-base;
+
+	a & {
+		border-bottom-color: $link-color;
+	}
+
+	a:hover & {
+		border-bottom-color: $link-hover-color;
+	}
+}
+
+.caret-right {
+	border-width: 4px 0 4px 6px;
+	border-left-color: $color-base;
+
+	a & {
+		border-left-color: $link-color;
+	}
+
+	a:hover & {
+		border-left-color: $link-hover-color;
+	}
+
+	.btn & {
+		border-left-color: #fff !important;
+	}
+}
+
+.caret-down {
+	top: -1px;
+	border-width: 6px 4px 0;
+	border-top-color: $color-base;
+
+	a & {
+		border-top-color: $link-color;
+	}
+
+	a:hover & {
+		border-top-color: $link-hover-color;
+	}
+}
+
+.caret-left {
+	border-width: 6px 4px 6px 0;
+	border-right-color: $color-base;
+	margin-left: 0;
+	margin-right: 5px;
+
+	a & {
+		border-right-color: $link-color;
+	}
+
+	a:hover & {
+		border-right-color: $link-hover-color;
+	}
+}

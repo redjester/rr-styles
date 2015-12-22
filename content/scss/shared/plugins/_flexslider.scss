@@ -1,0 +1,42 @@
+.slides {
+	@extend .list-unstyled;
+	margin-bottom: 0;
+}
+
+.slide {
+	position: relative;
+	margin-bottom: 0;
+
+	&:not(:first-child) {
+		display: none;
+	}
+}
+
+.flex-control-nav {
+	@extend .list-unstyled;
+	margin-bottom: 0;
+	text-align: center;
+
+	li {
+		display: inline-block;
+		margin: 0 0.5em;
+	}
+
+	a {
+		display: block;
+		cursor: pointer;
+		text-indent: -999em;
+		background-color: #ddd;
+		width: 1em;
+		height: 1em;
+		border-radius: 100%;
+
+		&.flex-active {
+			background-color: $link-color;
+		}
+
+		&:hover {
+			background-color: #ccc;
+		}
+	}
+}

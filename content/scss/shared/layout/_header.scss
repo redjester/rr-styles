@@ -1,0 +1,365 @@
+.site-header {
+	position: relative;
+	z-index: 99;
+	padding: 35px 0 0;
+	border-bottom: 1px solid $panel-border-color;
+
+	@media only screen and (max-width: 767px) {
+		padding-top: 0;
+	}
+}
+
+.app-bar {
+
+	@media only screen and (max-width: 767px) {
+		z-index: 1;
+		padding: 0.5em 0;
+		background-color: #fff;
+	}
+
+	.btn {
+		position: absolute;
+		top: -4px;
+		z-index: 4;
+		min-width: 0;
+		width: 50px;
+		height: 50px;
+		padding: 0;
+		text-align: center;
+		color: inherit;
+	}
+
+	.nav-toggle {
+		left: 0;
+	}
+
+	.search-toggle {
+		right: 0;
+	}
+}
+
+.site-title {
+	position: relative;
+	z-index: 3;
+	width: 200px;
+	margin-bottom: 0;
+
+	@media only screen and (max-width: 767px) {
+		margin: 0 auto;
+		width: 160px;
+	}
+
+	a {
+		display: block;
+		height: 50px;
+		background: transparent url('//placehold.it/200x50/ddd/333&amp;text=LC%20BOILERPLATE') no-repeat center;
+		text-indent: -999em;
+
+		@media (-webkit-min-device-pixel-ratio: 1.4), (min-resolution: 192dpi) { 
+			background-image: url('//placehold.it/400x100/ddd/333&amp;text=LC%20BOILERPLATE');
+			background-size: 100% auto;
+		}
+
+		@media only screen and (max-width: 767px) {
+			height: 40px;
+		}
+	}
+}
+
+.nav {
+	@extend .list-unstyled;
+	margin-bottom: 0;
+
+	.nav-item {
+		position: relative;
+		margin-bottom: 0;
+
+		&.active .nav-submenu {
+			top: 40px;
+			display: block !important;
+			opacity: 1;
+			visibility: visible;
+			transition-delay: 150ms;
+
+			@media only screen and (max-width: 767px) {
+				top: 0;
+			}
+		}
+
+		&.current .nav-link {
+			color: $brand-primary;
+
+			.caret-down {
+				border-top-color: $brand-primary;
+			}
+		}
+	}
+
+	.nav-link {
+		display: block;
+		text-decoration: none;
+		color: $color-base;
+		padding: 15px;
+		font-weight: 500;
+
+		&:hover {
+			color: $brand-primary;
+
+			.caret-down {
+				border-top-color: $brand-primary;
+			}
+		}
+
+		.caret-down {
+			border-top-color: $color-base;
+		}
+	}
+}
+
+.nav-submenu {
+	@extend .list-unstyled;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	z-index: 99;
+	background-color: #fff;
+	min-width: 200px;
+	border: 1px solid $panel-border-color;
+	opacity: 0;
+	visibility: hidden;
+	transition: top 150ms, opacity 150ms, visibility 150ms;
+
+	@media only screen and (max-width: 767px) {
+		position: relative;
+		top: 0;
+		z-index: 1;
+		display: none;
+		border: none;
+	}
+
+	.nav-submenu-item {
+		margin-bottom: 0;
+	}
+
+	.nav-submenu-link {
+		display: block;
+		text-decoration: none;
+		color: inherit;
+		text-align: left;
+		padding: 15px;
+
+		@media only screen and (max-width: 767px) {
+			padding-left: 25px;
+		}
+
+		&:hover {
+			color: $brand-primary;
+		}
+	}
+
+}
+
+.site-nav {
+
+	@media only screen and (max-width: 767px) {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: -250px;
+		z-index: 999;
+		width: 250px;
+		background-color: #fff;
+		overflow: auto;
+		-webkit-transition: -webkit-transform 300ms;
+		transition: transform 300ms;
+
+		.nav-visible & {
+			-webkit-transform: translateX(250px);
+			transform: translateX(250px);
+		}
+	}
+
+	.nav-item {
+		float: left;
+
+		@media only screen and (max-width: 767px) {
+			float: none;
+		}
+	}
+
+	.nav-link {
+		text-align: center;
+
+		@media only screen and (max-width: 767px) {
+			text-align: left;
+		}
+	}
+
+	.nav-toggle {
+		color: inherit;
+		text-decoration: none;
+		font-size: 30px;
+		line-height: 40px;
+		height: 45px;
+		padding: 0 15px;
+		text-align: right;
+
+		&:before {
+			content: '\00D7';
+		}
+	}
+}
+
+.nav-overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 998;
+	visibility: hidden;
+	opacity: 0;
+	background-color: #000;
+	-webkit-transition: all 300ms;
+	transition: all 300ms;
+
+	.nav-visible & {
+
+		@media only screen and (max-width: 767px) {
+			visibility: visible;
+			opacity: 0.8;
+		}
+	}
+}
+
+.utility-bar {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	z-index: 3;
+	width: 100%;
+	text-align: right;
+	font-size: 12px;
+
+	ul {
+		margin-bottom: 0;
+	}
+}
+
+.search-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	@media only screen and (max-width: 767px) {
+		top: 8px;
+		background-color: $panel-bg;
+		border-bottom: 1px solid $panel-border-color;
+		-webkit-transition: -webkit-transform 300ms;
+		transition: transform 300ms;
+
+		.search-visible & {
+			-webkit-transform: translateY(47px);
+			transform: translateY(47px);
+		}
+	}
+
+	form {
+		position: relative;
+		margin-top: 45px;
+		text-align: right;
+
+		@media only screen and (max-width: 767px) {
+			margin: 0.5em 0;
+			text-align: left;
+		}
+	}
+
+	input {
+		width: 300px;
+		padding-right: 55px;
+
+		@media only screen and (min-width: 768px) {
+			padding-right: 32px;
+		}
+
+		@media only screen and (max-width: 767px) {
+			width: 100%;
+		}
+	}
+
+	.btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		min-width: 0;
+		width: 45px;
+		padding: 0;
+		border: none;
+
+		@media only screen and (min-width: 768px) {
+			font-size: 1.4em;
+			background: transparent !important;
+			color: #999;
+			width: 32px;
+
+			&:hover {
+				color: darken(#999,10%);
+			}
+		}
+
+		@media only screen and (max-width: 767px) {
+
+			.fa-search {
+				display: none;
+			}
+
+			.assistive-text {
+				position: relative;
+				clip: auto;
+			}
+		}
+	}
+}
+
+#cookie-notification {
+	position: relative;
+	z-index: 999999;
+	display: none;
+	width: 100%;
+	background-color: $brand-primary;
+	padding: 10px 0;
+	color: #fff;
+	font-size: 12px;
+
+	.row {
+		min-height: 30px;
+	}
+
+	p {
+		margin-right: 40px;
+	}
+
+	a {
+		color: inherit;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}
+
+#cookie-notification-close {
+	position: absolute;
+	top: -3px;
+	right: 0;
+	display: block;
+	font-size: 30px;
+	width: 30px;
+	line-height: 1;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+}
