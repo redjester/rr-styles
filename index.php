@@ -38,6 +38,36 @@
 			</div>
 		</div>
 	</div>
+	<ul class="quick-links list-unstyled row">
+		<li class="col lg-3 md-3 sm-6 xs-12">
+			<a href="#ownBusiness">
+				<h2>Own a Business&#63;</h2>
+				<p>Register to gain instant recognition</p>
+				<i class="fa fa-angle-down"></i>
+			</a>
+		</li>
+		<li class="col lg-3 md-3 sm-6 xs-12">
+			<a href="#getQuote">
+				<h2>Get a Quote</h2>
+				<p>We&#39;ll do the work for you</p>
+				<i class="fa fa-angle-down"></i>
+			</a>
+		</li>
+		<li class="col lg-3 md-3 sm-6 xs-12">
+			<a href="#howWorks">
+				<h2>How it all works</h2>
+				<p>Our process in a nutshell</p>
+				<i class="fa fa-angle-down"></i>
+			</a>
+		</li>
+		<li class="col lg-3 md-3 sm-6 xs-12">
+			<a href="#leaveReview">
+				<h2>Leaving a review</h2>
+				<p>We&#39;ll walk you through the easy steps</p>
+				<i class="fa fa-angle-down"></i>
+			</a>
+		</li>
+	</ul>
 </header>
 
 <div class="section">
