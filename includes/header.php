@@ -87,7 +87,7 @@
 
 		<header class="site-header">
 			<div class="app-bar row">
-				<div class="col md-4 sm-12">
+				<div class="col lg-3 md-4 sm-12">
 					<h6 class="site-title">
 						<a href="/"><span>Registered Reviews</span></a>
 					</h6>
@@ -100,7 +100,7 @@
 						<span class="assistive-text">Search</span>
 					</button> 
 				</div>
-				<div class="col md-5 sm-12">
+				<div class="col lg-6 md-5 sm-12">
 					<nav class="site-nav">
 						<h6 class="assistive-text">Main navigation</h6>
 						<a href="#content" class="skip-link assistive-text">Skip to content</a>
@@ -108,10 +108,10 @@
 						<?php include('menu.php'); ?>
 					</nav>
 				</div>
-				<div class="col md-3 sm-12 align-right">
+				<div class="col lg-3 md-3 sm-12 align-right">
 					<nav class="business-login hide-for-sm">
 						<h6 class="assistive-text">Utility navigation</h6>
-						<a class="btn btn-primary business-login" id="buisness-login-header-btn" href="#" title="Log into your Business Account">Business Login<span class="fa fa-arrow-circle-right"></span></a>				
+						<a class="btn btn-primary business-login" id="buisness-login-header-btn" href="#" title="Log into your Business Account">Business Login<span class="fa fa-arrow-circle-o-right"></span></a>				
 					</nav>
 				</div>
 			</div>

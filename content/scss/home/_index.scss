@@ -1,12 +1,13 @@
 .home.section-page-header {
-	height: 659px;
+	min-height: 860px;
 	background: url('../img/header-background.jpg') no-repeat;
-	background-size: 100%;
+	background-position-x: -120px;
+    background-size: 115%;
 	padding-top: 190px;
 }
 
 .home .quick-links {
-	padding-top: 150px;
+	padding-top: 175px;
 
 	a {
 		text-decoration: none;

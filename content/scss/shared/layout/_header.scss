@@ -89,28 +89,41 @@
 		&.current .nav-link {
 			color: $brand-primary;
 
-			.caret-down {
+			.i {
 				border-top-color: $brand-primary;
 			}
 		}
+		&:first-child {
+			margin-top: -4px;
+		}
+
 	}
 
 	.nav-link {
 		display: block;
 		text-decoration: none;
-		color: $color-base;
+		color: $brand-secondary;
 		padding: 15px;
-		font-weight: 500;
+		font-weight: $font-weight-semi-bold;
+		text-transform: uppercase;
+		font-size: 14px;
+
+		i {
+			font-size: 23px;
+		    position: relative;
+		    top: 3px;
+		    left: 5px;
+		}
 
 		&:hover {
 			color: $brand-primary;
 
-			.caret-down {
+			i {
 				border-top-color: $brand-primary;
 			}
 		}
 
-		.caret-down {
+		i {
 			border-top-color: $color-base;
 		}
 	}
@@ -160,6 +173,7 @@
 }
 
 .site-nav {
+	margin-top: 2px;
 
 	@media only screen and (max-width: 767px) {
 		position: fixed;
@@ -396,5 +410,8 @@
 	font-weight: $font-weight-semi-bold;
 	span {
 		padding-left: 10px;
+    	font-size: 25px;
+    	vertical-align: middle;
+	    margin-top: -3px;
 	}
 }

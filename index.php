@@ -13,7 +13,7 @@
 		</div>
 	</div>
 	<div class="search-bar row">
-		<div class="home-search col lg-8 md-12">
+		<div class="home-search col lg-10 md-12">
 			<div class="row">
 				<div class="search-type col lg-8 md-8 sm-12">
 					<form>
