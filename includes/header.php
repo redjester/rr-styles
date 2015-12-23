@@ -100,7 +100,7 @@
 						<span class="assistive-text">Search</span>
 					</button> 
 				</div>
-				<div class="col lg-6 md-5 sm-12">
+				<div class="col lg-6 md-5 hide-for-sm">
 					<nav class="site-nav">
 						<h6 class="assistive-text">Main navigation</h6>
 						<a href="#content" class="skip-link assistive-text">Skip to content</a>
@@ -117,21 +117,26 @@
 			</div>
 
 			<div class="nav-overlay"></div>
-
 			<div class="search-bar show-for-sm">
 				<div class="row">
 					<div class="col">
 						<form>
 							<label for="Search" class="assistive-text">Search</label>
-							<input type="search" id="Search" name="Search" placeholder="Search" maxlength="150" />
+							<input type="search" id="Search" name="Search" placeholder="What service are you looking for?" maxlength="150" />
 							<button class="btn btn-primary">
 								<span class="fa fa-search"></span>
-								<span class="assistive-text">Go</span>
+								<span class="assistive-text">Find</span>
 							</button>
 						</form>
 					</div>
 				</div>
 			</div>
+				<nav class="site-nav show-for-sm">
+					<h6 class="assistive-text">Main navigation</h6>
+					<a href="#content" class="skip-link assistive-text">Skip to content</a>
+					<a class="nav-toggle show-for-sm" href="#"><span class="assistive-text">Hide Nav</span></a>
+					<?php include('menu.php'); ?>
+				</nav>
 		</header>
 
 		<main class="site-main" id="content">
