@@ -135,7 +135,20 @@
 					<h6 class="assistive-text">Main navigation</h6>
 					<a href="#content" class="skip-link assistive-text">Skip to content</a>
 					<a class="nav-toggle show-for-sm" href="#"><span class="assistive-text">Hide Nav</span></a>
-					<?php include('menu.php'); ?>
+					<ul class="nav">
+						<li class="nav-item">
+							<a href="#" class="nav-link" data-toggle="hover" aria-haspopup="true">Services<i class="fa fa-angle-down"></i></a>
+							<ul class="nav-submenu">
+								<li class="nav-submenu-item"><a class="nav-submenu-link" href="#">Get a quote</a></li>
+								<li class="nav-submenu-item"><a class="nav-submenu-link" href="#">Submit a business</a></li>
+								<li class="nav-submenu-item"><a class="nav-submenu-link" href="#">Something Else</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="#">How it works</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Leave a Review</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Business Login</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+					</ul>
 				</nav>
 		</header>
 

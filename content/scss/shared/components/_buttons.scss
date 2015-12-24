@@ -13,6 +13,7 @@ button,
 	font-weight: $btn-font-weight;
 	padding: $btn-padding;
 	border: $btn-border;
+	text-transform: uppercase;
 	@if $btn-border-radius != 0 {
 		border-radius: $btn-border-radius;
 	}

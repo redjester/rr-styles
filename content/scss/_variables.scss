@@ -53,11 +53,11 @@ $headings-margin: 0 0 .25em;
 
 //== buttons
 
-$btn-font-weight: 400 !default;
+$btn-font-weight: $font-weight-semi-bold;
 $btn-font-size: $font-size-base !default;
 $btn-padding: 0.75em 1.5em !default;
 $btn-border: none !default;
-$btn-border-radius: 3px !default;
+$btn-border-radius: 5px;
 
 $btn-primary-color: #fff !default;
 $btn-primary-hover-color: $btn-primary-color !default;

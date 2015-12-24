@@ -21,7 +21,7 @@
 						<input type="search" id="SearchType" name="SearchType" placeholder="Plumber, Electrician, Handy-man, etc." maxlength="650" />
 						<button class="btn btn-primary">
 							<span class="fa fa-search"></span>
-							<span class="assistive-text">Find</span>
+							<span class="assistive-text">Go</span>
 						</button>
 					</form>
 				</div>
@@ -70,10 +70,23 @@
 	</ul>
 </header>
 
-<div class="section">
-	<div class="section-content row">
+<div class="section register-business-home-section" id="ownBusiness">
+	<header class="section-header row">
 		<div class="col">
-			
+			<h2 class="section-title">Register your business</h2>
+		</div>
+	</header>
+	<div class="section-content row">
+		<div class="col md-6 sm-12">
+			<p>Registering your business will give you sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+			<a class="btn btn-primary" href="#" title="Learn more about the benifits">Get Started</a>
+		</div>
+		<div class="col md-6 sm-12">
+			<ul>
+				<li>Huge benefits when you register</li>
+				<li>This is why you should register</li>
+				<li>Another benefit when you register</li>
+			</ul>
 		</div>
 	</div>
 </div>
