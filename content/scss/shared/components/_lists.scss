@@ -38,3 +38,16 @@ li {
 		}
 	}
 }
+ul.list-lg {
+	font-size: $font-size-h3;
+	color: $brand-primary;
+	line-height: floor($font-size-h3 * 2.4);
+	@media only screen and (max-width: 1023px) {
+		padding: 30px 0px;
+		font-size: $font-size-h5;
+	}
+	@media only screen and (max-width: 767px) {
+		list-style-position: inside;
+		text-align: center;
+	}
+}

@@ -56,6 +56,11 @@ p,
 	color: inherit;
 }
 
+p.line-height-lg {
+	font-size: 16px;
+	line-height: floor($font-size-base * 2.4);
+}
+
 small,
 .small,
 .sm {

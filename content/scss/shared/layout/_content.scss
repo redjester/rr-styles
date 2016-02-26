@@ -27,7 +27,7 @@
 }
 
 .section {
-	padding: 40px 0;
+	padding: 40px 0px 60px 0px;
 
 	&.no-divider {
 		padding-top: 0;
@@ -43,8 +43,23 @@
 	}
 }
 
+.section-default {
+	background-color: #fff;
+	.section-title,
+	p {
+		color: $brand-secondary;
+	}
+}
+.section-alt {
+	background-color: $brand-alt;
+	.section-title,
+	p {
+		color: #fff;
+	}
+}
+
 .section-header {
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 
 	.section-title {
 		margin-bottom: 0;
@@ -58,6 +73,7 @@
 .section-title {
 	font-size: $font-size-h1;
 	font-weight: $font-weight-base;
+	text-align: center;
 }
 
 .section-description {

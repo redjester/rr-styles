@@ -111,7 +111,7 @@
 				<div class="col lg-3 md-3 sm-12 align-right">
 					<nav class="business-login hide-for-sm">
 						<h6 class="assistive-text">Utility navigation</h6>
-						<a class="btn btn-primary business-login" id="buisness-login-header-btn" href="#" title="Log into your Business Account">Business Login<span class="fa fa-arrow-circle-o-right"></span></a>				
+						<a class="btn btn-primary business-login" id="buisness-login-header-btn" href="#" title="Log into your Business Account">Business Login<span class="fa fa-arrow-circle-o-right hide-for-md"></span></a>				
 					</nav>
 				</div>
 			</div>

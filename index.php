@@ -41,28 +41,28 @@
 	<ul class="quick-links list-unstyled row">
 		<li class="col lg-3 md-3 sm-6 xs-12">
 			<a href="#ownBusiness">
-				<h2>Own a Business&#63;</h2>
+				<h2>Own a <span class="wrap-lg">Business&#63;</span></h2>
 				<p>Register to gain instant recognition</p>
 				<i class="fa fa-angle-down"></i>
 			</a>
 		</li>
 		<li class="col lg-3 md-3 sm-6 xs-12">
 			<a href="#getQuote">
-				<h2>Get a Quote</h2>
+				<h2>Get a <span class="wrap-lg">Quote</span></h2>
 				<p>We&#39;ll do the work for you</p>
 				<i class="fa fa-angle-down"></i>
 			</a>
 		</li>
 		<li class="col lg-3 md-3 sm-6 xs-12">
 			<a href="#howWorks">
-				<h2>How it all works</h2>
+				<h2>How it <span class="wrap-lg">all works</span></h2>
 				<p>Our process in a nutshell</p>
 				<i class="fa fa-angle-down"></i>
 			</a>
 		</li>
 		<li class="col lg-3 md-3 sm-6 xs-12">
 			<a href="#leaveReview">
-				<h2>Leaving a review</h2>
+				<h2>Leaving a <span class="wrap-lg">review</span></h2>
 				<p>We&#39;ll walk you through the easy steps</p>
 				<i class="fa fa-angle-down"></i>
 			</a>
@@ -70,7 +70,7 @@
 	</ul>
 </header>
 
-<div class="section register-business-home-section" id="ownBusiness">
+<div class="section section-default register-business-home-section" id="ownBusiness">
 	<header class="section-header row">
 		<div class="col">
 			<h2 class="section-title">Register your business</h2>
@@ -78,11 +78,11 @@
 	</header>
 	<div class="section-content row">
 		<div class="col md-6 sm-12">
-			<p>Registering your business will give you sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-			<a class="btn btn-primary" href="#" title="Learn more about the benifits">Get Started</a>
+			<p class="line-height-lg">Registering your business will give you sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+			<a class="btn btn-primary btn-arrow sm-12" href="#" title="Learn more about the benefits">Get Started</a>
 		</div>
 		<div class="col md-6 sm-12">
-			<ul>
+			<ul class="list-lg">
 				<li>Huge benefits when you register</li>
 				<li>This is why you should register</li>
 				<li>Another benefit when you register</li>
