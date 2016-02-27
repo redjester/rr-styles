@@ -7,12 +7,13 @@ $brand-alt: #658391; //grey-blue
 $brand-success: #090 !default;
 $brand-warning: #f0ad4e !default;
 $brand-danger: #c00 !default;
-
+$blue-crl: #536a75;
 
 //== scaffolding
 
 $body-bg: #fff !default;
 $color-base: #333 !default;
+$color-dark-base: #414042;
 
 $link-color: $brand-primary !default;
 $link-hover-color: darken($link-color, 15%) !default;

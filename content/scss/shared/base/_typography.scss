@@ -60,6 +60,10 @@ p.line-height-lg {
 	font-size: 16px;
 	line-height: floor($font-size-base * 2.4);
 }
+p.line-height-md {
+	font-size: 16px;
+	line-height: floor($font-size-base * 1.7);
+}
 
 small,
 .small,

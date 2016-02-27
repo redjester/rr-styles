@@ -97,6 +97,12 @@
 		font-size: $font-size-h1;
 		margin-bottom: 0;
 		color: inherit;
+		@media only screen and (max-width: 767px) {
+			font-size: floor($font-size-h1 * 0.8);
+		}
+		@media only screen and (max-width: 480px) {
+			font-size: $font-size-h2;
+		}
 	}
 
 	.section-description {
@@ -110,4 +116,122 @@
 	max-width: 350px;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+/* Shapes */
+.shape-wrapper {
+	position: relative;
+    max-width: 440px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.bg-crl {
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	background-color: $blue-crl;
+	position: absolute;
+	top: -46px;
+    left: 67px;
+    @media only screen and (max-width: 949px) {
+		display: none;	
+	}
+    @media only screen and (max-width: 767px) {
+		top: 10px;	
+		display: block;
+	}
+}
+
+/* Sprites */
+.rr-sprite {
+	background-image: url('/content/img/rr-sprite.png');
+}
+.rr-sprite.rr-sprite1,
+.rr-sprite.rr-sprite2,
+.rr-sprite.rr-sprite3,
+.rr-sprite.rr-sprite4,
+.rr-sprite.rr-sprite5 {
+	background-repeat: no-repeat;
+	position: relative;
+	text-indent: -9999px;
+}
+.rr-sprite.rr-sprite2,
+.rr-sprite.rr-sprite3,
+.rr-sprite.rr-sprite4,
+.rr-sprite.rr-sprite5 {
+	@media only screen and (max-width: 767px) {
+		//left: 200px !important;
+	}
+}
+.rr-sprite.rr-sprite1 {
+	width: 175px;
+	height: 200px;
+	background-position: 0px 0px;
+	top: 0px;
+    left: 120px;
+    @media only screen and (max-width: 767px) {
+		margin: 60px auto;
+		left: 0px;
+		margin-bottom: 75px;
+	}
+}
+.rr-sprite.rr-sprite2 {
+	width: 84px;
+	height: 100px;
+	background-position: -175px 0px;
+	position: absolute;
+	left: 110px;
+}
+.rr-sprite.rr-sprite3 {
+	width: 80px;
+	height: 95px;
+	background-position: -258px 0px;
+	position: absolute;
+	left: 110px;
+}
+.rr-sprite.rr-sprite4 {
+	width: 73px;
+    height: 99px;
+    background-position: -180px -103px;
+    position: absolute;
+	left: 115px;
+}
+.rr-sprite.rr-sprite5 {
+	width: 92px;
+    height: 87px;
+    background-position: -258px -107px;
+    position: absolute;
+	left: 105px;
+}
+
+.how-it-works-list {
+	text-align: center;
+	li {
+		padding-top: 40px;
+	}
+	h2 {
+	color: $brand-primary;
+	font-weight: $font-weight-base;
+	padding: 140px 0px 10px 0px;
+		@media only screen and (max-width: 767px) {
+			padding: 120px 0px 10px 0px;
+			height: 190px;
+		}
+	}
+	p {
+		color: $color-base;
+		padding: 0px 15px;
+		@media only screen and (max-width: 767px) {
+			padding: 0px;
+		}
+	}
+	.list-item {
+		top: 100px;
+	}
+}
+.leave-review-list {
+	h5 {
+		//color: $color-base;
+		text-transform: uppercase;
+	}
 }
