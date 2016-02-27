@@ -101,7 +101,7 @@
 			<div class="shape-wrapper">
 				<span class="bg-crl"></span>
 			</div>
-			<h6 class="rr-sprite rr-sprite1">Registered Reviews Get a Quote</h6>
+			<img class="article-icon document-icon" src="/content/img/icons/verified-document-icon.png" alt="All reviews are from actual customers" />
 		</div>
 		<div class="col md-7 sm-12">
 			<p class="line-height-lg">Let us do the hard work and ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
@@ -109,7 +109,7 @@
 		</div>
 	</div>
 </div>
-<div class="section section-default how-it-works-section section-default" id="howWorks">
+<div class="section section-default how-it-works-home-section section-default" id="howWorks">
 	<header class="section-header row">
 		<div class="col">
 			<h2 class="section-title">How it works</h2>
@@ -117,24 +117,30 @@
 	</header>
 	<ul class="how-it-works-list list-unstyled row">
 		<li class="col lg-3 md-3 sm-6 xs-12">
-			<div class="list-item">
-				<span class="rr-sprite rr-sprite2"></span>
+			<div class="icon-wrapper">
+				<img class="article-icon how-it-works-icon" src="/content/img/icons/checkmark-shield-registered-reviews.png" alt="Trustworthy reviews" />
+			</div>
 				<h2>Verified <span class="wrap-lg">Reviews</span></h2>
 				<p>Every one of our reviews are verified through an actual invoice giving you the utmost confidence in its accuracy.</p>
-			</div>
 		</li>
 		<li class="col lg-3 md-3 sm-6 xs-12">
-			<span class="rr-sprite rr-sprite3"></span>
+			<div class="icon-wrapper">
+				<img class="article-icon how-it-works-icon" src="/content/img/icons/search-icon.png" alt="No hidden fees" />
+			</div>		
 			<h2>100&#37; Free</h2>
 			<p>Unlike other sites, we won&rsquo;t charge you a dime to search and find results on our site.</p>
 		</li>
 		<li class="col lg-3 md-3 sm-6 xs-12">
-			<span class="rr-sprite rr-sprite4"></span>
+			<div class="icon-wrapper">
+				<img class="article-icon how-it-works-icon" src="/content/img/icons/local-icon.png" alt="Search locally" />			
+			</div>
 			<h2>Local</h2>
 			<p>Unlike other review sites we specialize in Wisconsin businesses.</p>
 		</li>
 		<li class="col lg-3 md-3 sm-6 xs-12">
-			<span class="rr-sprite rr-sprite5"></span>
+			<div class="icon-wrapper">
+				<img class="article-icon how-it-works-icon" src="/content/img/icons/seamless-icon.png" alt="Easy to use" />			
+			</div>
 			<h2>Seamless</h2>
 			<p>We can quickly connect you to affordable, trusted local businesses for any service need.</p>
 		</li>
@@ -152,23 +158,24 @@
 		</div>
 	</div>
 	<div class="section-content">
-		<ul class="leave-review-list list-unstyled row">
-			<li class="col lg-4 md-4 sm-4 xs-12">
-				<div class="list-item">
-					<h5>Take a picture of <span class="wrap-lg">your invoice</span></h5>
-				</div>
-			</li>
-			<li class="col lg-4 md-4 sm-4 xs-12">
-				<div class="list-item">
-					<h5>Upload from <span class="wrap-lg">your computer</span></h5>
-				</div>
-			</li>
-			<li class="col lg-4 md-4 sm-4 xs-12">
-				<div class="list-item">
-					<h5>Answer a few <span class="wrap-lg">questions &#38; a description </span><span class="wrap-lg">of your experience</span></h5>				
-				</div>
-			</li>
-		</ul>
+		<div class="row">
+			<div class="leave-a-review-steps col lg-10 md-12">
+				<ul class="leave-review-list list-unstyled row">
+					<li class="col lg-4 md-4 sm-12 xs-12">
+						<span class="numbered-icon">1</span>
+						<h5>Take a picture of <span class="wrap-lg">your invoice</span></h5>
+					</li>
+					<li class="col lg-4 md-4 sm-12 xs-12">
+						<span class="numbered-icon">2</span>
+						<h5>Upload from <span class="wrap-lg">your computer</span></h5>
+					</li>
+					<li class="col lg-4 md-4 sm-12 xs-12">
+						<span class="numbered-icon">3</span>
+						<h5>Answer a few questions <span class="wrap-lg">&#38; a description of</span><span class="wrap-lg">your experience</span></h5>				
+					</li>
+				</ul>
+			</div>
+		</div>
 		<div class="row">
 			<div class="col sm-12 btn-center">
 				<a class="btn btn-primary btn-arrow" href="#" title="Verify your review by uploading an invoice">Upload an invoice</a>

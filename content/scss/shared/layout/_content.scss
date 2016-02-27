@@ -124,6 +124,7 @@
     max-width: 440px;
     margin-right: auto;
     margin-left: auto;
+    width: 300px;
 }
 .bg-crl {
 	border-radius: 50%;
@@ -131,8 +132,8 @@
 	height: 300px;
 	background-color: $blue-crl;
 	position: absolute;
-	top: -46px;
-    left: 67px;
+	top: -55px;
+    left: 0px;
     @media only screen and (max-width: 949px) {
 		display: none;	
 	}
@@ -143,86 +144,97 @@
 }
 
 /* Sprites */
-.rr-sprite {
-	background-image: url('/content/img/rr-sprite.png');
-}
-.rr-sprite.rr-sprite1,
-.rr-sprite.rr-sprite2,
-.rr-sprite.rr-sprite3,
-.rr-sprite.rr-sprite4,
-.rr-sprite.rr-sprite5 {
-	background-repeat: no-repeat;
-	position: relative;
-	text-indent: -9999px;
-}
-.rr-sprite.rr-sprite2,
-.rr-sprite.rr-sprite3,
-.rr-sprite.rr-sprite4,
-.rr-sprite.rr-sprite5 {
-	@media only screen and (max-width: 767px) {
-		//left: 200px !important;
-	}
-}
-.rr-sprite.rr-sprite1 {
-	width: 175px;
-	height: 200px;
-	background-position: 0px 0px;
-	top: 0px;
-    left: 120px;
-    @media only screen and (max-width: 767px) {
-		margin: 60px auto;
-		left: 0px;
-		margin-bottom: 75px;
-	}
-}
-.rr-sprite.rr-sprite2 {
-	width: 84px;
-	height: 100px;
-	background-position: -175px 0px;
-	position: absolute;
-	left: 110px;
-}
-.rr-sprite.rr-sprite3 {
-	width: 80px;
-	height: 95px;
-	background-position: -258px 0px;
-	position: absolute;
-	left: 110px;
-}
-.rr-sprite.rr-sprite4 {
-	width: 73px;
-    height: 99px;
-    background-position: -180px -103px;
-    position: absolute;
-	left: 115px;
-}
-.rr-sprite.rr-sprite5 {
-	width: 92px;
-    height: 87px;
-    background-position: -258px -107px;
-    position: absolute;
-	left: 105px;
-}
+// .rr-sprite {
+// 	background-image: url('/content/img/rr-sprite.png');
+// }
+// .rr-sprite.rr-sprite1,
+// .rr-sprite.rr-sprite2,
+// .rr-sprite.rr-sprite3,
+// .rr-sprite.rr-sprite4,
+// .rr-sprite.rr-sprite5 {
+// 	background-repeat: no-repeat;
+// 	position: relative;
+// 	text-indent: -9999px;
+// }
+// .rr-sprite.rr-sprite2,
+// .rr-sprite.rr-sprite3,
+// .rr-sprite.rr-sprite4,
+// .rr-sprite.rr-sprite5 {
+// 	@media only screen and (max-width: 767px) {
+// 		//left: 200px !important;
+// 	}
+// }
+// .rr-sprite.rr-sprite1 {
+// 	width: 175px;
+// 	height: 200px;
+// 	background-position: 0px 0px;
+// 	top: 0px;
+//     left: 120px;
+//     @media only screen and (max-width: 767px) {
+// 		margin: 60px auto;
+// 		left: 0px;
+// 		margin-bottom: 75px;
+// 	}
+// }
+// .rr-sprite.rr-sprite2 {
+// 	width: 84px;
+// 	height: 100px;
+// 	background-position: -175px 0px;
+// 	position: absolute;
+// 	left: 110px;
+// }
+// .rr-sprite.rr-sprite3 {
+// 	width: 80px;
+// 	height: 95px;
+// 	background-position: -258px 0px;
+// 	position: absolute;
+// 	left: 110px;
+// }
+// .rr-sprite.rr-sprite4 {
+// 	width: 73px;
+//     height: 99px;
+//     background-position: -180px -103px;
+//     position: absolute;
+// 	left: 115px;
+// }
+// .rr-sprite.rr-sprite5 {
+// 	width: 92px;
+//     height: 87px;
+//     background-position: -258px -107px;
+//     position: absolute;
+// 	left: 105px;
+// }
 
 .how-it-works-list {
 	text-align: center;
+	padding-top: 50px;
+	@media only screen and (max-width: 479px) {
+		padding-top: 15px;
+	}
 	li {
-		padding-top: 40px;
+		@media only screen and (max-width: 767px) {
+			padding-top: 20px;
+			min-height: 350px;
+		}
+		@media only screen and (max-width: 479px) {
+			min-height: 320px;
+		}
 	}
 	h2 {
 	color: $brand-primary;
 	font-weight: $font-weight-base;
-	padding: 140px 0px 10px 0px;
+	min-height: 80px;
+	margin: 0px;
+	padding: 20px 0px;
 		@media only screen and (max-width: 767px) {
-			padding: 120px 0px 10px 0px;
-			height: 190px;
+			
 		}
 	}
 	p {
 		color: $color-base;
 		padding: 0px 15px;
 		@media only screen and (max-width: 767px) {
-			padding: 0px;
+			padding: 0px !important;
 		}
 	}
 	.list-item {
@@ -231,7 +243,10 @@
 }
 .leave-review-list {
 	h5 {
-		//color: $color-base;
 		text-transform: uppercase;
 	}
+}
+.article-icon {
+	display: block;
+	margin: 0 auto;
 }
